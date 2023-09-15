@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <title class="font-semibold">Hoja de Vida</title>
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header class="bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-semibold">Hoja de vida</h1>
+        </div>
+    </header>
+    <div class="container mx-auto mt-8">
+        <ul class="flex border-b" >
+            <li class="-mb-px mr-4 p-4 text-center bg-gray-100 hover:bg-gray-400">
+                <a class="text-blue-700 text-xl font-semibold" href="#tab1">Informacion Personal</a>
+            </li>
+            <li class="mr-4 p-4 text-center bg-gray-100 hover:bg-gray-400 text-center">
+                <a class="text-blue-700 text-xl font-semibold" href="#tab2">Educacion</a>
+            </li>
+            <li class="mr-4 p-4 text-center bg-gray-100 hover:bg-gray-400 text-center">
+                <a class="text-blue-700 text-xl font-semibold" href="#tab3">Habilidades y Experiencia
+                </a>
+            </li>
+            <li class="mr-4 p-4 text-center bg-gray-100 hover:bg-gray-400 text-center">
+                <a class="text-blue-700 text-xl font-semibold" href="#tab4">Contacto</a>
+            </li>
+        </ul>
+
+        <div class="py-4">
+            <div id="tab1" class="tab-content">
+                <h2 class="text-2xl font-semibold mb-2 mr-4 p-2">Informacion Personal</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <br>
+                        <h2 class="mr-4 p-2 text-2xl font-semibold">Carlos Francisco Idrobo Eraso</h2> <br>
+                        <p class="mr-4 p-2 text-xl text-gray-600"><strong>Dirección: </strong>calle 4 #11-35, Popayán, Cauca, Colombia</p>
+                        <p class="mr-4 p-2 text-xl text-gray-600"><strong>Telefono: </strong>3106684277</p>
+                        <p class="mr-4 p-2  text-xl text-gray-600 "><strong>Correo electrónico: </strong> <a class="text-blue-600 underline" href="mailto:cfidrobo@unicauca.edu.co">cfidrobo@unicauca.edu.co</a></p>
+                        <br>
+                    </div>
+                    <div>
+                        <img src="imagenes/foto perfil.jpg" width="180" height="260">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="mr-4 p-2 text-2xl font-semibold">Objetivo</h2>
+                    <p class="mr-4 p-2 text-xl text-gray-600">Como estudiante de séptimo semestre de Ingeniería de Sistemas en la Universidad del Cauca, aspiro a utilizar mis conocimientos en tecnología, programación y matemáticas aplicadas para contribuir al desarrollo de soluciones innovadoras y eficientes en el campo de la informática y la tecnología. Mi objetivo es formular propuestas y desarrollar sistemas que resuelvan problemas reales y mejoren la calidad de vida de las personas y la eficiencia de las organizaciones. </p>
+                    
+                </div>
+            </div>
+            <div id="tab2" class="hidden tab-content">
+                <h2 class="mr-4 p-2 text-2xl font-semibold">Educacion</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <li class="mr-4 p-2 text-2xl font-semibold">Bachiller Comercial</li>
+                        <p class="mr-4 p-2 text-xl text-gray-600">Institución educativa Sagrado Corazón de Jesus, San Lorenzo, Nariño <br>Año de graduacion 2015 </p>
+                        
+                    </div>
+
+                    <div>
+                        <img src="imagenes/logoColegio.jpg" width="120" height="200">
+                    </div>
+
+                    <div>
+                        <li class="mr-4 p-2 text-2xl font-semibold">Estudiante ingenieria de sistemas(septimo semestre)</li>
+                        <p class="mr-4 p-2 text-xl text-gray-600">Universidad del Cauca <br>En mi formación en Ingeniería de Sistemas, he adquirido conocimientos en programación, algoritmos, análisis de datos y desarrollo de software. Mi enfoque es utilizar estas habilidades para abordar desafíos tecnológicos y contribuir a la innovación en el campo de la informática. </p>
+                    </div>
+
+                    <div>
+                        <img src="imagenes/LogoUnicauca.jpg" width="120" height="200">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div id="tab3" class="hidden tab-content">
+                <h2 class="text-2xl font-semibold mb-2">Habilidades</h2>
+                <li class="mr-4 p-2 text-xl text-gray-600">Programacion en varios lenguajes, incluyendo Java, Python, c++</li>
+                <li class="mr-4 p-2 text-xl text-gray-600">Analisis de datos</li>
+                <li class="mr-4 p-2 text-xl text-gray-600">Desarrollo de software</li>
+                <li class="mr-4 p-2 text-xl text-gray-600">Gestion de Proyectos TI</li>
+
+                <br><br>
+                <div class="container mx-auto">
+                    <h2 class="text-2xl font-semibold mb-2">Experiencia Laboral</h2>
+                    <p class="mr-4 p-2 text-xl text-gray-600">Actualmente no tengo experiencia laboral detallada. </p>
+                </div> <br> <br>
+
+                
+            </div>
+            <div id="tab4" class="hidden tab-content">
+                <h2 class="text-2xl text-center font-bold">Contacto</h2>
+                <div class="container mx-auto text-center">
+                    <form action="procesar_formulario.php" method="post" class="bg-white p-6 shadow-md rounded-lg">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="mb-4">
+                                <label for="nombre" class="block text-gray-700 font-semibold">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required class="border border-gray-300 px-4 py-2 w-full rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                
+                            <div class="mb-4">
+                                <label for="correo" class="block text-gray-700 font-semibold">Correo electrónico:</label>
+                                <input type="email" id="correo" name="correo" required class="border border-gray-300 px-4 py-2 w-full rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="block text-gray-700 font-semibold">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="2" required class="border border-gray-300 px-4 py-2 w-full rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Add more tab content sections as needed -->
+        </div>
+    </div>
+
+    <footer class="bg-gray-100  py-4">
+        <p class="text-center font-semibold">2023</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab-content");
+            const tabLinks = document.querySelectorAll("ul.flex a");
+
+            tabLinks.forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    // Hide all tab content
+                    tabs.forEach((tab) => {
+                        tab.classList.add("hidden");
+                    });
+
+                    // Show the selected tab content
+                    const tabId = this.getAttribute("href").substr(1);
+                    document.getElementById(tabId).classList.remove("hidden");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
